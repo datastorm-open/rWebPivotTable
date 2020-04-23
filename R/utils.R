@@ -42,7 +42,7 @@
 #' @import jsonlite
 #'
 #' @export
-webPivotTable <- function(data, width = NULL, height = NULL) {
+webPivotTable <- function(data, width = "100%", height = "400px") {
 
 
   attrArray <- jsonlite::toJSON(colnames(data))
