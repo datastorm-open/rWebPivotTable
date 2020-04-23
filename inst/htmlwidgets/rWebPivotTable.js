@@ -15,11 +15,23 @@ HTMLWidgets.widget({
 
         var wpt = document.getElementsByTagName('web-pivot-table')[0];
 
-        wpt.setWptFromDataArray(
+       wpt.setOptions({
+          localeFilePath: "./lang/",
+          locale: "en",
+          leavePageWarning: 0,
+          limit: {
+            sourceDataMaxRows: 500000,
+            sourceDataMaxColumns: 1000,
+            sourceDataMaxDataCells: 50000000
+          }
+      });
+      
+      wpt.setWptFromDataArray(
           x.attrArray,
           x.dataArray,
           "url"
-        );
+      );
+
 
       },
 
