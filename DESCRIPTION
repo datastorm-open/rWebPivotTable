@@ -1,0 +1,20 @@
+Package: rWebPivotTable
+Type: Package
+Title: Pivot Table visualization using 'wpt.js' Library
+Version: 0.0.1
+Authors@R: c(
+      person("Benoit", "Thieurmel", role = c("aut", "cre"),
+       comment = "R interface", email = "benoit.thieurmel@datastorm.fr")
+    )
+Maintainer: Benoit Thieurmel <benoit.thieurmel@datastorm.fr>
+Description: Provides an R interface to the 'wpt.js' JavaScript charting
+    library. It allows an interactive visualization of table.
+BugReports: https://github.com/datastorm-open/rWebPivotTable/issues
+URL: https://github.com/datastorm-open/rWebPivotTable
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports:
+  htmlwidgets,
+  jsonlite
+RoxygenNote: 7.0.0
