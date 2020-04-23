@@ -10,8 +10,11 @@
 #'\dontrun{
 #'\donttest{
 #' # work only in browser, not in RStudio viewer
-#'  webPivotTable(iris)
-#'
+#' w <- webPivotTable(iris)
+#' w # view in real browser
+#' 
+#' htmlwidgets::saveWidget(w, file = "pivot.html")
+#' 
 #' # in shiny
 #'  require(shiny)
 #'  

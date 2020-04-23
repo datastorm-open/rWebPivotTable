@@ -13,7 +13,10 @@ require(rWebPivotTable)
 
 # minimal example
 # work only in browser, not in RStudio viewer
-webPivotTable(iris)
+w <- webPivotTable(iris)
+w
+
+htmlwidgets::saveWidget(w, file = "pivot.html")
 
 # shiny example
 require(shiny)
